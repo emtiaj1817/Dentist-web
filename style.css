@@ -1,0 +1,1265 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Version College
+	Template URI: http://coderitem.com
+	Description: This is Version College web site. 
+	Author: SA Bappy
+	Author URI: http://sabappy.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Top Area 
+	3. Header Area 
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+-----------------------------------------------------------------------------------*/
+
+/*****************************************************/
+/**************    1. Typography   *******************/
+/*****************************************************/
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	background: #FFFFFF;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	text-decoration: none;
+	color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 500;
+}
+
+img {
+	border: none;
+	max-width: 100%
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.section-padding {
+	padding: 100px 0px;
+}
+
+.mr {
+	padding-right: 0;
+}
+
+.ml {
+	padding-left: 0;
+}
+
+.sec-p {
+	padding: 100px 0px;
+}
+
+/*****************************************************/
+/**************    2. Header Top Area   ****************/
+/*****************************************************/
+.header-top-area {
+	padding: 15px 0px;
+	background: #3F4964;
+	position: relative;
+}
+
+.header-top-area.sticky-nav {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99999999;
+}
+
+.overlays-1 {
+	position: absolute;
+	width: 50%;
+	background-color: rgba(225, 225, 225, 0.4);
+	height: 25px;
+	top: 0;
+	right: 0;
+}
+
+.overlay-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: end;
+
+}
+
+.overlay-menu ul li a {
+	font-size: 9px;
+	color: white;
+
+}
+
+.overlay-menu ul li i {
+	color: #FFC170;
+	font-size: 9px;
+
+}
+
+.logo-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.logo-area img {
+	width: 200px;
+}
+
+.menu-area {
+	margin-top: 30px;
+}
+
+.menu-area ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-area ul li a {
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+
+.menu-area ul li a:hover {
+	color: #FFC170;
+}
+
+.menu-area ul li a span {
+	color: #FFC170;
+	margin-left: 7px;
+}
+
+.menu-area ul li a span:hover {
+	color: white;
+}
+
+.menu-area ul li i {
+	color: white;
+
+}
+
+/*****************************************************/
+/**************    3. Banner Area     ******************/
+/*****************************************************/
+.banner-section {
+	background-image: url(img/banner2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1700px;
+	height: 99vh;
+	overflow: hidden;
+}
+
+.banner-wrap {
+	display: flex;
+}
+
+.banner-wrap>div {
+	flex: 1;
+	-webkit-box-flex: 1;
+}
+
+.banner-left-side {
+	position: relative;
+	text-align: center;
+	z-index: 9;
+	padding: 0px;
+}
+
+.banner-left-side::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #27304A;
+	opacity: 94%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.banner-left-side .stars {
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+	margin-top: 80px;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+}
+
+.banner-left-side .stars::after {
+	position: absolute;
+	content: '★★★★★';
+	top: -30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	font-size: 22px;
+	color: #FFC170;
+	font-weight: normal;
+
+}
+
+.banner-left-side h1 {
+	text-transform: uppercase;
+	color: #FFC170;
+	margin-top: 28px;
+	font-weight: normal;
+	font-size: 40px;
+}
+
+.banner-left-side h1 span {
+	display: block;
+	font-size: 22px;
+	letter-spacing: 9px;
+	font-weight: normal;
+	color: #FFC170;
+	margin-bottom: 10px;
+}
+
+.banner-left-side h2 {
+	font-size: 18px;
+	color: #FFFFFF;
+	margin: 45px 0px 20px;
+	position: relative;
+}
+
+.banner-left-side h2::after {
+	position: absolute;
+	content: '';
+	top: -30px;
+	left: 0;
+	right: 0;
+	width: 110px;
+	height: 1px;
+	background-color: white;
+	margin: auto;
+}
+
+.banner-left-side p {
+	max-width: 570px;
+	width: 100%;
+	font-size: 18px;
+	color: white;
+	line-height: 28px;
+	margin: 0 auto;
+	font-weight: normal;
+	height: 80px;
+	margin-bottom: 40px;
+}
+
+.banner-about {
+	max-width: 560px;
+	width: 100%;
+	margin: 80px auto 80px auto;
+	position: relative;
+	text-align: left;
+}
+
+.banner-about::after {
+	position: absolute;
+	content: '';
+	background-image: url(img/Group\ 2615.png);
+	top: 0;
+	right: 0;
+	width: 350px;
+	height: 100%;
+	background-position: right;
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-about a {
+	color: white;
+}
+
+.hover-btn {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	padding: 15px 40px;
+	border: 2px solid #FFC170;
+	text-align: center;
+	z-index: 9;
+	position: relative;
+
+}
+
+.hover-btn::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 0%;
+	background-color: #FFC170;
+	top: 0;
+	transition: 0.3s;
+
+
+}
+
+.hover-btn::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 0%;
+	background-color: #FFC170;
+	bottom: 0;
+	transition: 0.3s;
+
+
+}
+
+.hover-btn:hover:after {
+	height: 50%;
+}
+
+.hover-btn:hover:before {
+	height: 50%;
+}
+
+.book-online {
+	background-color: #FFC170;
+	padding: 18px;
+	margin: 0px 0px 0px -15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 150px;
+	position: relative;
+
+}
+
+.book-online a {
+	color: #3F4964;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 10px;
+	font-size: 18px;
+
+}
+
+.book-online::after {
+	content: '';
+	position: absolute;
+	height: 40px;
+	width: 1px;
+	top: 15%;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	margin: 0 auto;
+
+}
+
+.banner-right-side {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.banner-right-side button {
+	background: url(img/baner_play_btn.png);
+	background-repeat: no-repeat;
+	border: none;
+	aspect-ratio: 1;
+	width: 200px;
+}
+
+
+
+/*****************************************************/
+/**************    5.Dentist type-section Area  ****************/
+/*****************************************************/
+.dentist-type-section {
+	position: relative;
+	z-index: 9;
+}
+
+.dentist-type-wrap {
+	max-width: 1700px;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding-top: 100px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.single-info-den {
+	width: 390px;
+	height: 365px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+
+}
+
+.single-info-den div {
+	display: flex;
+	align-items: flex-end;
+	height: 115px;
+	width: 100%;
+	background-color:
+		rgba(39, 48, 74, 78%);
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.single-info-den a {
+	color: #FFC170;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.5s;
+	position: relative;
+
+}
+
+.single-info-den a:hover {
+	color: white;
+
+}
+
+/* .single-info-den a::after {
+	position: absolute;
+	content: '';
+	width: 105px;
+	height: 105px;
+	background: white url('img/Group\ 2680.png') no-repeat;
+	background-position: center;
+	transform: scale(1.1);
+	border-radius: 100%;
+	top: -125px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+} */
+
+.dentist-type-section::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 350px;
+	background: #45A7C1;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+}
+
+/*****************************************************/
+/**************    5. family cosmatic Area  ****************/
+/*****************************************************/
+.family-cosmatic-sec {
+	background-color: rgba(242, 245, 252);
+	margin-top: 100px;
+}
+
+.family-cosmatic-sec h2 {
+	font-size: 61px;
+	color: #3F4964;
+	font-weight: normal;
+	text-align: center;
+	line-height: 80px;
+	margin-bottom: 80px;
+}
+
+.family-content {
+	max-width: 1022px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.family-content p {
+	margin-bottom: 40px;
+	font-size: 18px;
+	color: #3F4964;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.family-content a {
+	margin-bottom: 40px;
+	font-size: 25px;
+	color: #3F4964;
+	font-weight: normal;
+}
+
+.btn-two {
+	display: flex;
+	gap: 65px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+	position: relative;
+
+}
+
+.btn-two a {
+	color: #3F4964;
+	font-size: 20px;
+	font-weight: normal;
+	border: 1px solid #FFC170;
+	padding: 15px 40px;
+
+}
+
+/*****************************************************/
+/**************    6. Specializing Area  ****************/
+/*****************************************************/
+.specializing-sec {
+	position: relative;
+	z-index: 9;
+}
+
+.specializing-sec::before,
+.specializing-sec::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+
+}
+
+.specializing-sec::before {
+	background-color: #27304A;
+	left: 0;
+}
+
+.specializing-sec::after {
+	background-color: #FFC170;
+	right: 0;
+	opacity: 20%;
+}
+
+.specilalizing-wrap {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.specializing-left-side {
+	padding: 80px 15px;
+	max-width: 640px;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+
+
+}
+
+.specializing-left-side h3 {
+	color: #FFC170;
+	font-size: 38px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	position: relative;
+
+
+}
+
+.specializing-left-side h3::after {
+	position: absolute;
+	content: '';
+	bottom: -60%;
+	width: 70px;
+	height: 1px;
+	background: white;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+
+}
+
+.specializing-left-side p {
+	color: white;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.specializing-left-side ul {
+	max-width: 350px;
+	width: 100%;
+	margin: 40px auto 0 auto;
+	text-align: initial;
+}
+
+.specializing-left-side li {
+	list-style: square;
+	list-style-position: inside;
+	padding: 15px 0;
+	padding-left: 50px;
+	border-bottom: 1px solid white;
+
+
+
+}
+
+.specializing-left-side li::marker {
+	color: #FFC170;
+	font-size: 22px;
+}
+
+.specializing-left-side li a {
+	font-size: 20px;
+	font-family: normal;
+	color: white;
+
+}
+
+.specializing-left-side li a:hover {
+	color: #FFC170;
+}
+
+.specializing-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.specializing-right img {
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+/*****************************************************/
+/**************    7. accordian Area  ****************/
+/*****************************************************/
+.accordian-sec-area {
+	max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.accordion_head {
+	background-color: white;
+	color: #3F4964;
+	font-size: 30px;
+	margin: 0 0px 11px 11px;
+	padding: 35px 45px;
+	font-weight: normal;
+	border-bottom: 2px solid #F6C27C;
+}
+
+.accordion_head:last-child {
+	border-bottom: transparent;
+}
+
+.accordion_head span {
+	font-size: 40px;
+	font-weight: normal;
+}
+
+
+.accordion_body {
+	background: white;
+}
+
+.accordion_body p {
+	padding: 18px 100px;
+	margin: 0px;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 35px;
+	color: #3F4964;
+}
+
+.plusminus {
+	float: right;
+}
+
+
+
+
+
+
+
+/*****************************************************/
+/**************    8. New Patent Area  ****************/
+/*****************************************************/
+.new-patent-wra {
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+}
+
+.new-patent-left img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.new-patent-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #45A7C1;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.new-patent-right::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-image: url(img/Union\ 1.png);
+	background-position: center;
+	margin: auto;
+	opacity: 9%;
+	inset: 0;
+	background-repeat: no-repeat;
+}
+
+.new-patent-right::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	bottom: 0;
+	left: -146px;
+	margin: auto;
+	border-top: 73px solid transparent;
+	border-right: 73px solid #45A7C1;
+	border-bottom: 73px solid transparent;
+	border-left: 73px solid transparent;
+}
+
+.new-patent-right h3 {
+	font-size: 50px;
+	color: white;
+	font-weight: normal;
+	margin-bottom: 80px;
+	position: relative;
+
+}
+
+.new-patent-right h3::after {
+	position: absolute;
+	content: '';
+	width: 60px;
+	height: 1px;
+	background: white;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -45px;
+
+}
+
+.new-patent-right p {
+	color: white;
+	padding: 0px 15px;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+/*****************************************************/
+/**************    9. Our Doctor Area  ****************/
+/*****************************************************/
+.doc-sec-area {
+	text-align: center;
+	margin: 0 auto;
+	padding: 80px 0 100px;
+	width: 100%;
+	margin-bottom: 100px;
+	background: #F2F5FC;
+}
+
+.doc-sec-area h3 {
+	color: #3f4964;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 80px;
+}
+
+.doctors {
+	display: flex;
+	gap: 90px;
+	align-items: center;
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.doctors>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 25%;
+
+}
+
+.doctors img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.doctors a {
+	font-size: 18px;
+	font-weight: bold;
+	color: #3F4964;
+	padding: 30px 0px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.doctors span {
+	font-size: 12px;
+	color: #3F4964;
+	font-weight: normal;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #3F4964;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100%;
+	display: block;
+}
+
+/*****************************************************/
+/**************    10. Testimonial Area  ****************/
+/*****************************************************/
+.container-x {
+	padding: 0px 15px;
+}
+
+.testimonial-head h3 {
+	font-size: 60px;
+	color: #3F4964;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 90px;
+	position: relative;
+}
+
+.testimonial-head h3::after {
+	position: absolute;
+	content: '';
+	width: 60px;
+	height: 1px;
+	background: #3F4964;
+	bottom: -45px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+
+
+}
+
+.testimonial-head span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFC170;
+	font-size: 22px;
+	gap: 18px;
+	margin-bottom: 50px;
+}
+
+.testimonial-head span p {
+	color: #3F4964;
+	font-size: 18px;
+
+}
+
+.testimonial-lab ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #6e6d6d;
+	border-bottom: 1px solid #6e6d6d;
+	gap: 100px;
+	padding-bottom: 18px;
+	margin: 80px 0 60px;
+}
+
+.testimonial-lab ul li {
+	font-size: 22px;
+	font-weight: bold;
+	color: #6e6d6d;
+	text-transform: uppercase;
+
+}
+
+.testimonial-lab ul li.active {
+	color: #3F4964;
+	position: relative;
+}
+
+.testimonial-lab ul li.active::after {
+	position: absolute;
+	width: 88px;
+	height: 3px;
+	background: #3F4964;
+	content: '';
+	bottom: -18px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.test-tap-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+
+}
+
+.test-tap-body>div {
+	flex: 1;
+}
+
+.single-test-body {
+	background: white;
+	padding: 40px 40px 110px 40px;
+	margin: 40px 0px;
+	position: relative;
+	box-shadow: 0 0 40px #4149621a;
+	overflow: hidden;
+}
+
+.review-name {
+	display: flex;
+	margin-bottom: 40px;
+	gap: 40px;
+}
+
+.review-name img {
+	width: 65px;
+
+}
+
+.review-name h4 {
+	color: #243760;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+
+
+}
+
+.review-name h4::after {
+	position: absolute;
+	content: '★★★★★';
+	color: #FFC170;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+}
+
+.single-test-body p {
+	width: 300px;
+	font-size: 18px;
+	color: #3F4964;
+	font-weight: normal;
+	line-height: 28px;
+	font-style: italic;
+	min-height: 310px;
+}
+
+.border {
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid#3F4964;
+	bottom: 60px;
+	left: 0;
+}
+
+.single-test-body::after {
+	position: absolute;
+	content: '';
+	background: url(img/Google.png);
+	background-repeat: no-repeat;
+	bottom: 15px;
+	left: 21px;
+	width: 80px;
+	height: 30px;
+}
+
+.single-test-body::before {
+	position: absolute;
+	content: '';
+	background: url(img/Path\ 25552.png);
+	background-repeat: no-repeat;
+	bottom: 117px;
+	left: 85%;
+	width: 35px;
+	height: 25px;
+}
+
+.testimonial-btn {
+	text-align: center;
+	margin: 70px 0px;
+}
+
+.testimonial-btn a {
+	color: #3F4964;
+	font-size: 20px;
+	font-weight: normal;
+	border: 1px solid #FFC170;
+	padding: 15px 40px;
+}
+
+/*****************************************************/
+/**************    11. Footer Area  ****************/
+/*****************************************************/
+.footer-top {
+	display: flex;
+}
+
+.footer-top>div {
+	flex: 1;
+}
+
+.single-footer {
+	background-color: #3F4964;
+	padding: 50px 70px 40px;
+}
+
+.single-footer span {
+	text-align: center;
+	color: #FFC170;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	display: block;
+	border-bottom: 1px solid #FFC170;
+	padding-bottom: 30px;
+	padding-left: 0;
+}
+
+.single-footer p {
+	font-size: 16px;
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	line-height: 30px;
+	padding-left: 60px;
+}
+
+.single-footer a {
+	font-size: 16px;
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	line-height: 30px;
+	padding-left: 60px;
+}
+
+
+.single-footer-mid {
+	background-color: #3F4964;
+	padding: 50px 70px 40px;
+	opacity: 90%;
+}
+
+.single-footer-mid span {
+	text-align: center;
+	color: #FFC170;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	display: block;
+	border-bottom: 1px solid #FFC170;
+	padding-bottom: 30px;
+	padding-left: 0;
+}
+
+.single-footer-mid p {
+	font-size: 16px;
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	line-height: 30px;
+	padding-left: 60px;
+}
+
+.single-footer iframe {
+	height: 250px;
+	border: none;
+	display: block;
+	margin-left: 40px;
+}
+
+.single-footer a.dir-link {
+	font-size: 16px;
+	font-weight: normal;
+	padding-left: 38px;
+	color: #FFC170;
+	text-decoration: underline;
+	margin-top: 5px;
+}
+
+.footer-bottom {
+	background: #27304A;
+	padding: 30px 15px;
+}
+
+.footer-bottom ul {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-bottom ul li {
+	padding: 0px 20px;
+	border-right: 1px solid white;
+}
+
+.footer-bottom ul li:last-child {
+	border-right: none;
+}
+
+.footer-bottom ul li a {
+	font-size: 16px;
+	color: white;
+	font-weight: normal;
+
+}
+
+.footer-bottom ul li a:hover {
+	color: #FFC170;
+
+}
+
+.footer-copy {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.footer-copy p {
+	font-size: 16px;
+	color: white;
+	line-height: 30px;
+}
+
+.footer-copy ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.footer-copy ul li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+/*****************************************************/
+/**************    4. Footer Area  ****************/
+/*****************************************************/

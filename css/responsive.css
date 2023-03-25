@@ -1,0 +1,19 @@
+@media all and (max-width:990px){
+	
+}
+
+@media all and (max-width:767px){
+	.mob-rev {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media all and (max-width: 320px){
+	
+}
+
+
+
+
+
